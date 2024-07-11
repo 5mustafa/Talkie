@@ -246,7 +246,7 @@ void Talkie::initializeHardware() {
         TCCR2A |= _BV(COM2B1); // OC2B non-inverting mode
     }
     if (InvertedOutputPin) {
-        InvertedOutputPin = 11; // OC2A
+        InvertedOutputPin = 9; // OC2A
         pinMode(InvertedOutputPin, OUTPUT);
         TCCR2A |= _BV(COM2A1) | _BV(COM2A0); // OC2A inverting mode
     }
