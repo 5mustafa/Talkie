@@ -241,7 +241,7 @@ void Talkie::initializeHardware() {
      */
     TCCR2A = _BV(WGM21) | _BV(WGM20); // Fast PWM
     if (NonInvertedOutputPin) {
-        NonInvertedOutputPin = 3; // OC2B
+        NonInvertedOutputPin = 6; // OC2B
         pinMode(NonInvertedOutputPin, OUTPUT);
         TCCR2A |= _BV(COM2B1); // OC2B non-inverting mode
     }
